@@ -39,3 +39,18 @@ exclude_lines = [
     "raise NotImplementedError",
     "if __name__ == .__main__.:",
 ]
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".github",
+    ".circleci",
+    "docs",
+    "tests",
+    "releasenotes",
+    "venv",
+    ".venv",
+]
+
+[tool.ruff.lint]
+select = ["S"]
